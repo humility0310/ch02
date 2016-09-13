@@ -1,10 +1,15 @@
 package bit2016.goodsman.data;
 
 public class Goods {
+	public Goods(){
+		System.out.println("저는 생성자 입니다.");
+		count++;
+	}
 	private String name;
 	private int price;
 	private int countStock;
 	private int countSold;
+	public static int count;//static변수, class변수
 
 	public String getName() {
 		return name;

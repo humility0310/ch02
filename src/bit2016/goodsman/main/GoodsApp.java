@@ -12,10 +12,15 @@ public class GoodsApp {
 		goods.setCountSold(10);
 
 		System.out.println(
-				goods.getName() + ":" +
-				goods.getPrice()+":"+
-				goods.getCountStock()+":"+
-				goods.getCountSold());
+				goods.getName() + ":" + 
+						goods.getPrice() + ":" + 
+						goods.getCountStock() + ":" + 
+						goods.getCountSold());
+
+		Goods goods2 = new Goods();
+
+		System.out.println(Goods.count);
+		;
 	}
 
 }
