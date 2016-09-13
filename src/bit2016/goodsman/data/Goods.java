@@ -1,4 +1,4 @@
-package mypackage;
+package bit2016.goodsman.data;
 
 public class Goods {
 	private String name;
