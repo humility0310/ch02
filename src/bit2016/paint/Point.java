@@ -4,6 +4,16 @@ public class Point {
 	private int x;
 	private int y;
 
+	public Point(){
+		
+	}
+	
+	public Point(int x, int y){
+		this.x = x;
+		this.y = y;
+		System.out.println("객체 생성");
+	}
+	
 	public int getX() {
 		return x;
 	}

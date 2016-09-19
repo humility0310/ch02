@@ -9,5 +9,8 @@ public class PaintApp {
 		point.setY(100);
 		
 		point.show();
+		
+		Point point2 = new Point(200, 200);
+		point2.show();
 	}
 }
