@@ -20,7 +20,13 @@ public class GoodsApp {
 		Goods goods2 = new Goods();
 
 		System.out.println(Goods.count);
-		;
+		
+		goods.showInfo();
+		
+		int discoutPrice = (int)(0.1*goods.getPrice());
+		
+//		int discountPrice = goods.calcDiscountPrice(0.1);
+//		System.out.println("discout(10%): "+discountPrice);
 	}
 
 }
