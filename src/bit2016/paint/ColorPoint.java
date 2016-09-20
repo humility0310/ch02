@@ -16,5 +16,9 @@ public class ColorPoint extends Point {
 	public void setColor(String color) {
 		this.color = color;
 	}
-	
+	public void show(){
+		System.out.println("x = " + this.getX() + 
+							", y = " + this.getY() +
+							"을 "+color+"으로 그렸습니다.");
+	}
 }
