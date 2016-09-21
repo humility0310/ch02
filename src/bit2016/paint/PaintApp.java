@@ -1,6 +1,6 @@
 package bit2016.paint;
 
-public class PaintApp {
+public class PaintApp{
 	public static void main(String[] args) {
 
 		Point point = new Point();
@@ -18,20 +18,20 @@ public class PaintApp {
 		point3.show(false);
 		point3.show(true);
 
-		Shape rectnagle = new Rectangle();
+		Drawable rectnagle = new Rectangle();
 		drow(rectnagle);
-
-		Shape circle = new Circle();
-		drow(circle);
-
-		Shape triangle = new Triangle();
-		drow(triangle);
-
+		drow(new Circle());
+		drow(new Triangle());
 		drow(new Pentagon());
 
+		drow(new ColorPoint(200, 100, "White"));
+
 	}
 
-	public static void drow(Shape shape) {
-		shape.drow();
+	public static void drow(Drawable drawable) {
+		drawable.drow();
 	}
+	// public static void drow(Shape shape) {
+	// shape.drow();
+	// }
 }

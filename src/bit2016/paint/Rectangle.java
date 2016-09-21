@@ -1,11 +1,21 @@
 package bit2016.paint;
 
-public class Rectangle extends Shape {
+public class Rectangle extends Shape implements Drawable {
 	private int x1;
 	private int x2;
 
 	private int y1;
 	private int y2;
+
+	public Rectangle() {
+	}
+
+	public Rectangle(int x1, int x2, int y1, int y2) {
+		this.x1 = x1;
+		this.x2 = x2;
+		this.y1 = y1;
+		this.y2 = y2;
+	}
 
 	public int getX1() {
 		return x1;
@@ -41,8 +51,14 @@ public class Rectangle extends Shape {
 
 	@Override
 	public void drow() {
-//		super.drow();
+		// super.drow();
 		System.out.println("사각형을 그렿습니다");
 	}
-	
+
+	@Override
+	public double calcultateArea() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

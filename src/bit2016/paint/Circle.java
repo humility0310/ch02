@@ -1,10 +1,11 @@
 package bit2016.paint;
 
-public class Circle extends Shape {
+public class Circle extends Shape implements Drawable{
 	private int x1;
 	private int x2;
 	private int y1;
 	private int y2;
+	private int radius;
 	public int getX1() {
 		return x1;
 	}
@@ -32,6 +33,11 @@ public class Circle extends Shape {
 	@Override
 	public void drow() {
 		System.out.println("원을 그렸습니다.");
+	}
+	@Override
+	public double calcultateArea() {
+		// TODO Auto-generated method stub
+		return radius*radius*Math.PI;
 	}
 	
 }
